@@ -6,7 +6,7 @@ steps:
     args: ['build', '.', '-t', 'europe-west1-docker.pkg.dev/$PROJECT_ID/hello-world-python/hello-world-python:${COMMIT_SHA}', '-t', 'europe-west1-docker.pkg.dev/$PROJECT_ID/hello-world-python/hello-world-python','-f', 'Dockerfile']
     dir: 'app'  
     id: build
-  # Run unit tests
+  # Run unit tests 3
   - name: europe-west1-docker.pkg.dev/$PROJECT_ID/hello-world-python/hello-world-python
     entrypoint: python
     args: ["-m","pytest","unit_tests.py"]
